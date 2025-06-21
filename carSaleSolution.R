@@ -30,7 +30,7 @@ library(reticulate)
 #/**********
 
 tryCatch({
-  origen_C<-"C:/Users/Fredy/RandP" #Definir la ruta base donde se usara la solucion
+  origen_C<-"" #Definir la ruta base donde se usara la solucion
   new_env_path <- paste0(origen_C,"/CarSaleSolution") #CarSaleSolution ser la carpeta de origen para el entorno Python
   
   #Creacion de entorno virtual
@@ -67,7 +67,7 @@ tryCatch({
 # Intalamos paquetes necesraios:
 py_install("pandas")
 
-ruta_csv<-"C:/Users/Fredy/RandP/resources/CarSales-car_data.csv" #asignar ruta segun corresponda
+ruta_csv<-"" #asignar ruta segun corresponda
 #podemos validar si el archivo existe
 file.exists(ruta_csv)
 
